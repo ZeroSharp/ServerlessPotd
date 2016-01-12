@@ -2,8 +2,8 @@
   "name": "potd",
   "version": "0.0.1",
   "profile": "aws-0",
-  "location": "https://github.com/...",
-  "author": "",
+  "location": "https://github.com/ZeroSharp/ServerlessPotd",
+  "author": "Robert Anderson",
   "description": "",
   "custom": {},
   "cloudFormation": {
