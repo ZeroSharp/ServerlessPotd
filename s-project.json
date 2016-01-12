@@ -1,0 +1,21 @@
+{
+  "name": "serverlessPotdCheck",
+  "version": "0.0.1",
+  "profile": "serverless-0",
+  "location": "https://github.com/...",
+  "author": "",
+  "description": "",
+  "domain": "zerosharp.com",
+  "stages": {
+    "development": [
+      {
+        "region": "eu-west-1",
+        "iamRoleArnLambda": "arn:aws:iam::962613113552:role/serverlessPotdCheck-development-r-IamRoleLambda-12LOSLPN3JHS8",
+        "regionBucket": "serverless.euwest1.zerosharp.com",
+        "restApiId": "udjkzpj2a2"
+      }
+    ]
+  },
+  "custom": {},
+  "plugins": []
+}

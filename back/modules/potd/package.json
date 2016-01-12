@@ -1,0 +1,25 @@
+{
+  "name": "potd",
+  "version": "0.0.1",
+  "description": "Dependencies for a Serverless Module written in Node.js",
+  "author": "Robert Anderson",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "serverless-helpers-js": "~0.0.3",
+    "typescript": "^1.7.5"
+  },
+  "scripts": {
+    "prepublish": "tsc",
+    "pretest": "tsc",
+    "test": "mocha ./lib/test"
+  }
+}
