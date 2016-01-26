@@ -6,7 +6,7 @@
   "bundle": "typings/tsd.d.ts",
   "installed": {
     "mocha/mocha.d.ts": {
-      "commit": "627b6c158b73494c803f36fc2fe00ad75faa8fde"
+      "commit": "46719185c564694c5583c4b7ad94dbb786ecad46"
     }
   }
 }

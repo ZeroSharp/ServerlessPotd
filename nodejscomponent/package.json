@@ -1,7 +1,7 @@
 {
-  "name": "potd",
+  "name": "",
   "version": "0.0.1",
-  "description": "Dependencies for a Serverless Module written in Node.js",
+  "description": "Potd module dependencies",
   "author": "Robert Anderson",
   "license": "MIT",
   "private": true,

@@ -1,21 +1,75 @@
 {
-  "name": "serverlessPotdCheck",
+  "name": "serverlessPotd",
   "version": "0.0.1",
-  "profile": "serverless-0",
-  "location": "https://github.com/ZeroSharp/ServerlessPotd",
-  "author": "Robert Anderson",
-  "description": "",
-  "domain": "zerosharp.com",
-  "stages": {
-    "development": [
-      {
-        "region": "eu-west-1",
-        "iamRoleArnLambda": "arn:aws:iam::962613113552:role/serverlessPotdCheck-development-r-IamRoleLambda-12LOSLPN3JHS8",
-        "regionBucket": "serverless.euwest1.zerosharp.com",
-        "restApiId": "udjkzpj2a2"
-      }
-    ]
-  },
+  "profile": "serverless-v0.1.5",
+  "location": "https://github.com/...",
+  "author": "",
+  "description": "A Slick New Serverless Project",
   "custom": {},
-  "plugins": []
+  "templates": {},
+  "plugins": [],
+  "cloudFormation": {
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "The AWS CloudFormation template for this Serverless application's resources outside of Lambdas and Api Gateway",
+    "Resources": {
+      "IamRoleLambda": {
+        "Type": "AWS::IAM::Role",
+        "Properties": {
+          "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+              {
+                "Effect": "Allow",
+                "Principal": {
+                  "Service": [
+                    "lambda.amazonaws.com"
+                  ]
+                },
+                "Action": [
+                  "sts:AssumeRole"
+                ]
+              }
+            ]
+          },
+          "Path": "/"
+        }
+      },
+      "IamPolicyLambda": {
+        "Type": "AWS::IAM::Policy",
+        "Properties": {
+          "PolicyName": "${stage}-${project}-lambda",
+          "PolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+              {
+                "Effect": "Allow",
+                "Action": [
+                  "logs:CreateLogGroup",
+                  "logs:CreateLogStream",
+                  "logs:PutLogEvents"
+                ],
+                "Resource": "arn:aws:logs:${region}:*:*"
+              }
+            ]
+          },
+          "Roles": [
+            {
+              "Ref": "IamRoleLambda"
+            }
+          ]
+        }
+      }
+    },
+    "Outputs": {
+      "IamRoleArnLambda": {
+        "Description": "ARN of the lambda IAM role",
+        "Value": {
+          "Fn::GetAtt": [
+            "IamRoleLambda",
+            "Arn"
+          ]
+        }
+      }
+    }
+  }
 }
