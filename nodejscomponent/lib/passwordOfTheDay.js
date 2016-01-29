@@ -1,15 +1,18 @@
-var Generator = (function () {
-    function Generator() {
+function checkPotd(password) {
+    return new PasswordGenerator().check(password);
+}
+exports.checkPotd = checkPotd;
+var PasswordGenerator = (function () {
+    function PasswordGenerator() {
     }
-    Generator.prototype.generate = function (date) {
-        // simple password for now...
+    PasswordGenerator.prototype.generate = function (date) {
+        // generate today's password
         return "Password";
     };
-    Generator.prototype.check = function (password) {
-        var today = new Date();
-        var generator = new Generator();
-        return password == generator.generate(today);
+    PasswordGenerator.prototype.check = function (password) {
+        // check the value matches today's password of the day
+        return password == this.generate(new Date());
     };
-    return Generator;
+    return PasswordGenerator;
 })();
-exports.Generator = Generator;
+exports.PasswordGenerator = PasswordGenerator;

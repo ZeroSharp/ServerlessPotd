@@ -15,7 +15,9 @@
       "apiKeyRequired": false,
       "requestParameters": {},
       "requestTemplates": {
-        "application/json": ""
+        "application/json": {
+            "password": "$input.params('password')"
+        }
       },
       "responses": {
         "400": {

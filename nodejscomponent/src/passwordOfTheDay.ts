@@ -1,15 +1,19 @@
-export class Generator 
+export function checkPotd(password : string) : boolean
+{
+    return new PasswordGenerator().check(password);
+}
+
+export class PasswordGenerator 
 {
 	generate(date: Date) : string 
 	{
-        // simple password for now...
-		return "Password";
+        // generate today's password
+ 		return "Password"; 
 	}	
 	
 	check(password : string) : boolean 
 	{
-		var today = new Date();
-		var generator = new Generator();
-		return password == generator.generate(today);
+        // check the value matches today's password of the day
+		return password == this.generate(new Date());
 	}
 } 

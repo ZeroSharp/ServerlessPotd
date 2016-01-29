@@ -1,9 +1,9 @@
 /// <reference path="../../typings/mocha/mocha.d.ts" />
-var passwordOfTheDay = require("../passwordOfTheDay");
+var PasswordOfTheDay = require("../passwordOfTheDay");
 describe("Generator", function () {
     var subject;
     beforeEach(function () {
-        subject = new passwordOfTheDay.Generator();
+        subject = new PasswordOfTheDay.PasswordGenerator();
     });
     describe("#generate", function () {
         it("should generate the password", function () {

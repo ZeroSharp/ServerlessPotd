@@ -1,11 +1,11 @@
 /// <reference path="../../typings/mocha/mocha.d.ts" />
-import passwordOfTheDay = require("../passwordOfTheDay");
+import PasswordOfTheDay = require("../passwordOfTheDay");
 
 describe("Generator", () => {
-    var subject : passwordOfTheDay.Generator;
+    var subject : PasswordOfTheDay.PasswordGenerator;
 
     beforeEach(function () {
-        subject = new passwordOfTheDay.Generator();
+        subject = new PasswordOfTheDay.PasswordGenerator();
     });
 
     describe("#generate", () => {
