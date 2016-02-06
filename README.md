@@ -1,4 +1,4 @@
-# ServerlessPotd
+# serverlessPotd
 
 This is a sample Serverless application to accompany [a series of blog posts](http://blog.zerosharp.com/serverless-framework-part-1-up-and-running/) about the [Serverless application framework](https://github.com/serverless/serverless). It's work in progress. Follow the blog posts.
 

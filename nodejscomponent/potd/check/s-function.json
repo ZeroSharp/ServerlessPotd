@@ -11,6 +11,7 @@
     {
       "path": "potd/check",
       "method": "GET",
+      "type": "AWS",
       "authorizationType": "none",
       "apiKeyRequired": false,
       "requestParameters": {},

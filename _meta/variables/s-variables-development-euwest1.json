@@ -1,6 +1,0 @@
-{
-  "region": "eu-west-1",
-  "resourcesStackName": "serverlessPotd-development-r",
-  "iamRoleArnLambda": "arn:aws:iam::962613113552:role/serverlessPotd-development-r-IamRoleLambda-1URJ0QHQ7CDZB",
-  "apiGatewayApi": "serverlessPotd"
-}

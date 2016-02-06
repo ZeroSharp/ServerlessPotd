@@ -1,6 +1,6 @@
 {
   "project": "serverlessPotd",
-  "projectBucket": "serverless.eu-west-1.zerosharp.com",
-  "domain": "zerosharp.com",
+  "projectBucket": "serverless.eu-west-1.potd-zerosharp.com",
+  "domain": "potd-zerosharp.com",
   "notificationEmail": "potd@nosredna.com"
 }

@@ -1,4 +1,4 @@
-/// <reference path="../../typings/mocha/mocha.d.ts" />
+/// <reference path="../../typings/main.d.ts" />
 var PasswordOfTheDay = require("../passwordOfTheDay");
 describe("Generator", function () {
     var subject;

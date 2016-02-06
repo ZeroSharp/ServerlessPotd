@@ -1,7 +1,7 @@
 {
   "name": "",
   "version": "0.0.1",
-  "description": "Potd module dependencies",
+  "description": "Dependencies for a Password of the day Serverless Module",
   "author": "Robert Anderson",
   "license": "MIT",
   "private": true,
@@ -11,7 +11,7 @@
   },
   "keywords": [],
   "devDependencies": {
-    "mocha": "^2.3.4"
+    "mocha": "^2.4.5"
   },
   "dependencies": {
     "serverless-helpers-js": "~0.0.3",

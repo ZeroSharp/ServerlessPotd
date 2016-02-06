@@ -1,4 +1,4 @@
-/// <reference path="../../typings/mocha/mocha.d.ts" />
+/// <reference path="../../typings/main.d.ts" />
 import PasswordOfTheDay = require("../passwordOfTheDay");
 
 describe("Generator", () => {
